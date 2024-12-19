@@ -23,16 +23,20 @@ public class Students {
 
     private String cellNo;
 
+    private String image;
+
+
     public Students() {
 
     }
 
-    public Students(int id, String age, String name, String email, String cellNo) {
+    public Students(int id, String age, String name, String email, String cellNo, String image) {
         this.id = id;
         this.age = age;
         this.name = name;
         this.email = email;
         this.cellNo = cellNo;
+        this.image = image;
     }
 
     public int getId() {
@@ -75,4 +79,12 @@ public class Students {
         this.cellNo = cellNo;
     }
 
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
 }
